@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <h1>build a simple calculator in Python</h1>
+    </head>
+
+<section>
+<br>
+<span style="font-size: 1.5em; font-weight: bold;">Step 1:</span> Understand What You Want
+<p style="margin-bottom: 30px;"></p>
+The calculator should:
+<br>
+<ol>
+    <li>Ask the user to input two numbers</li>
+    <li>Ask the user to choose an operation: `+`, `-`, `*`, `/`</li>
+    <li>Perform the calculation</li>
+    <li>Show the result</li>
+</ol>
+
+</section>
+
+<section>
+<span style="font-size: 1.5em; font-weight: bold;">Step 2: </span> Understand What You Want
+Write the Code
+<p style="margin-bottom: 30px;"></p>
+
+<h3>Simple Calculator in Python:</h3>
+
+<h3>Ask for user input:</h3>
+<ol>
+    <li>num1 = float(input("Enter the first number: "))</li>
+    <li>op = input("Enter an operator (+, -, *, /): ")</li>
+    <li>num2 = float(input("Enter the second number: "))</li>
+</ol>
+
+<h4>Perform the calculation:</h4><br>
+if op == '+':<br>
+    result = num1 + num2<br>
+elif op == '-':<br>
+    result = num1 - num2<br>
+elif op == '*':<br>
+    result = num1 * num2<br>
+elif op == '/':<br>
+    if num2 != 0:<br>
+        result = num1 / num2<br>
+    else:<br>
+        result = "Error: Cannot divide by zero"<br>
+else:<br>
+    result = "Invalid operator"<br>
+
+<h4>Print the result:</h4>
+print("Result:", result)
+
+
+<h3>Example Output:</h3>
+
+
+Enter the first number: 10
+Enter an operator (+, -, *, /): *
+Enter the second number: 5
+Result: 50.0<br>
+
+</section>
+
+<section>
+    <br>
+<span style="font-size: 1.5em; font-weight: bold;">Step 3: </span> Understand What You Want
+Improvements You Can Try
+<p style="margin-bottom: 30px;"></p>
+
+<h3>Want to make it cooler? You can:</h3>
+<ul>
+    <li>Use a `while` loop to keep it running until the user exits.
+</li>
+    <li>Put the logic inside a function.
+</li>
+    <li>Add error handling for invalid input (like letters instead of numbers).
+</li>
+    <li>Add support for exponentiation (`**`) or modulus (`%`).
+</li>
+</ul>
+</section>
+
+
+</html>

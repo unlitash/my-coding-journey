@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <h1>Build a Calculator in JavaScript</h1>
+    </head>
+<body>
+<span style="font-size: 1.5em; font-weight: bold;"> Step 1:</span>What It Should Do?
+<br>
+<br>
+The calculator should:
+<ol>
+    <il>Ask the user for two numbers</il>
+    <il>Ask for an operator (`+`, `-`, `*`, `/`)</il>
+    <il>Perform the calculation</il>
+    <il>Show the result</il>
+</ol>
+
+
+<span style="font-size: 1.5em; font-weight: bold;">Step 2: </span>Write the Code
+
+<h3>Simple Calculator in JavaScript</h3>
+
+
+<h3>Get user input</h3>
+<ol>
+    <il>let num1 = parseFloat(prompt("Enter the first number:"));
+</il>
+    <il>let op = prompt("Enter an operator (+, -, *, /):");
+</il>
+    <il>let num2 = parseFloat(prompt("Enter the second number:"));
+</il>
+</ol>
+
+let result;<br>
+
+<h4>Perform the calculation:</h4>
+if (op === "+") {<br>
+    result = num1 + num2;<br>
+} else if (op === "-") {<br>
+    result = num1 - num2;<br>
+} else if (op === "*") {<br>
+    result = num1 * num2;<br>
+} else if (op === "/") {<br>
+    if (num2 !== 0) {<br>
+        result = num1 / num2;<br>
+    } else {<br>
+        result = "Error: Cannot divide by zero";<br>
+    }<br>
+} else {<br>
+    result = "Invalid operator";<br>
+}<br>
+
+<h4>Show the result:</h4>
+alert("Result: " + result);
+
+<br><br>
+<span style="font-size: 1.5em;font-weight: bold;">Step 3: </span>Upgrades You Can Try
+<ol>
+    <li>Looping: Let the user calculate repeatedly until they exit.
+</li>
+    <li>Functions: Wrap operations in functions like `add(a, b)`.
+</li>
+    <li>GUI Version: Create HTML buttons and display for a real calculator interface.
+</li>
+</ol>
+
+</body>
+</html>
